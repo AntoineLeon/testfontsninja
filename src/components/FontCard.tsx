@@ -29,21 +29,21 @@ export function FontCard({
   return (
     <Link
       href={url}
-      className="block bg-[var(--card-bg)] rounded-[32px] p-10 hover:shadow-lg transition-shadow"
+      className="block bg-[var(--card-bg)] rounded-[32px] p-14 hover:shadow-lg transition-shadow w-[437px] h-[314px] flex flex-col"
     >
-      <div className="h-[140px] mb-4">
+      <div className="h-[160px] mb-4 flex items-start">
         <div
           dangerouslySetInnerHTML={{ __html: images.alphabet.svg }}
-          className="[&_path]:fill-current [&>svg]:h-[140px] [&>svg]:w-auto"
+          className="[&_path]:fill-current [&>svg]:w-full [&>svg]:h-auto [&>svg]:max-h-[160px]"
         />
       </div>
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex items-start justify-between gap-4 h-[35px]">
         <div className="flex-1">
-          <h3 className="font-semibold text-sm leading-tight mb-1">{name}</h3>
+          <h3 className="font-semibold text-sm leading-tight">{name}</h3>
           <p className="text-xs text-foreground/60">{foundry.name}</p>
         </div>
         <div className="text-right shrink-0">
-          <p className="text-xs text-foreground/60 leading-tight mb-1">
+          <p className="text-xs text-foreground/60">
             {price ? price.formatedPrice : "From $19"}
           </p>
           <p className="text-xs text-foreground/60">{totalFonts} styles</p>

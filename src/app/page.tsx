@@ -61,16 +61,14 @@ export default async function Home({
   const totalPages = Math.ceil(data.totalFamilies / 24);
 
   return (
-    <main className="px-8 md:px-16 pb-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-          {data.families.map((family) => (
-            <FontCard key={family.idFont} {...family} />
-          ))}
-        </div>
-
-        <Pagination currentPage={currentPage} totalPages={totalPages} />
+    <main className="px-14 pb-8">
+      <div className="grid grid-cols-3 gap-2 mt-4">
+        {data.families.map((family) => (
+          <FontCard key={family.idFont} {...family} />
+        ))}
       </div>
+
+      <Pagination currentPage={currentPage} totalPages={totalPages} />
     </main>
   );
 }
