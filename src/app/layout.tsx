@@ -28,8 +28,8 @@ export default async function RootLayout({
       <body>
         <ThemeProvider initialTheme={initialTheme}>
           <div className="min-h-screen">
-            <header className="px-8 py-6 md:px-16 md:py-8">
-              <div className="flex items-center justify-between max-w-7xl mx-auto">
+            <header className="px-14 py-8">
+              <div className="flex items-center justify-between">
                 <Logo />
                 <ThemeToggle />
               </div>

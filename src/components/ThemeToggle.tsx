@@ -8,7 +8,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="bg-[#E74C3C] hover:bg-[#C0392B] text-white px-6 py-2 rounded-lg transition-colors"
+      className="bg-[var(--button-primary)] hover:opacity-90 text-white w-[150px] h-[49px] rounded-[32px] flex items-center justify-center gap-2 transition-opacity"
     >
       Switch theme
     </button>

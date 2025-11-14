@@ -29,7 +29,7 @@ export function FontCard({
   return (
     <Link
       href={url}
-      className="block bg-[var(--card-bg)] rounded-[32px] p-14 hover:shadow-lg transition-shadow w-[437px] h-[314px] flex flex-col"
+      className="block bg-[var(--card-bg)] rounded-[32px] p-14 hover:shadow-lg transition-shadow w-full max-w-[437px] h-[314px] flex flex-col"
     >
       <div className="h-[160px] mb-4 flex items-start">
         <div

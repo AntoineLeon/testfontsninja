@@ -62,7 +62,7 @@ export default async function Home({
 
   return (
     <main className="px-14 pb-8">
-      <div className="grid grid-cols-3 gap-2 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-4">
         {data.families.map((family) => (
           <FontCard key={family.idFont} {...family} />
         ))}
